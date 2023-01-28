@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A brief description">
+    <meta name="author" content="Your site name">
+
+    <title>Little Lemon</title>
+
+    <meta property="og:title" content="Our Menu">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://littlelemon/">
+    <meta property="og:description"
+        content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Little Lemon">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.png">
+    </header>
+    <main>
+        <form method="post">
+            <div>
+                <label for="username">Username:</label>
+                <input id="username" name="username" type="text" minlength="2" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input id="password" name="password" type="password" minlength="2" required>
+            </div>
+            <!-- Button -->
+            <button id="submit" type="submit">Log In</button>
+
+            <!-- Fieldsets -->
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qualificaiton</legend>
+                <label for="pdegree">Primary degree:</label><br>
+                <input type="text" id="pdegree" name="degree" value="Masters"><br>
+                <label for="fos">Last name:</label><br>
+                <input type="text" id="fos" name="field" value="Psychology"><br>
+            </fieldset>
+
+            <!-- Drop down using select -->
+            <!-- Doesn't allow user input -->
+            <div>
+                <label for="course">Choose a course:</label><br>
+                <select id="course" name="courselist">
+                    <option value="html">HTML Introduction</option>
+                    <option value="css">Styling with CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="react">React Basics</option>
+                </select>
+            </div>
+
+            <!-- Drop down usingg datalist -->
+            <!-- Allows user input -->
+            <div>
+                <label for="flowers">Favourite flower:</label><br>
+                <input list="flowers" name="flowers">
+                <datalist id="flowers">
+                    <option value="Rose">
+                    <option value="Lily">
+                    <option value="Tulip">
+                    <option value="Daffodil">
+                    <option value="Orchid">
+                </datalist>
+            </div>
+        </form>
+    </main>
+
+    <!-- JavaScript files -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
