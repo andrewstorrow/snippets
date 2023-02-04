@@ -1,3 +1,45 @@
+
+//////////////////
+//For in
+const users = {
+    Alan: {
+        online: false
+    },
+    Jeff: {
+        online: true
+    },
+    Sarah: {
+        online: false
+    }
+}
+
+function countOnline(usersObj) {
+    let numOnline = 0;
+    for (let user in usersObj) {
+        if (usersObj[user].online) {
+            numOnline++;
+        }
+    }
+    return numOnline;
+}
+console.log(countOnline(users));
+
+
+//////////////////
+//return a filtered version of the passed array such that any array nested within arr containing elem has been removed.
+function filteredArray(arr, elem) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].indexOf(elem) === -1) {
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+console.log(filteredArray([["trumpets", 2], ["flutes", 4], ["saxophones", 2]], 2));
+
+
 //////////////////
 //Spread
 function spreadOut() {
